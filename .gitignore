@@ -1,0 +1,8 @@
+# VSCode project config files
+.vscode/
+
+# Hugo build lock
+.hugo_build.lock
+
+# Static site export directory
+public

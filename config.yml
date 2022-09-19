@@ -16,7 +16,7 @@ menu:
       weight: 1
     - name: "Projects"
       pre: "tool"
-      url: "/projects/"
+      url: "/projects"
       weight: 2
     - name: "Posts"
       pre: "pen-tool"

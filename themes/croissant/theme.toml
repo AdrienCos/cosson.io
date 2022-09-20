@@ -1,0 +1,12 @@
+name = "Croissant"
+license = "MIT"
+licenselink = "https://github.com/AdrienCos/croissant/blob/master/LICENSE"
+description = "Custom Hugo theme for my personal website"
+homepage = "https://cosson.io/"
+tags = []
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "Adrien Cosson (adrien@cosson.io"
+  homepage = "cosson.io"

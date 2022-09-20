@@ -1,0 +1,32 @@
+baseURL: "https://cosson.io"
+languageCode: "en-us"
+title: "Adrien Cosson"
+theme: "Croissant"
+enableEmoji: true
+
+# General config
+minify:
+  minifyOutput: true
+
+menu:
+  main:
+    - name: "Home"
+      pre: "home"
+      url: "/"
+      weight: 1
+    - name: "Projects"
+      pre: "tool"
+      url: "/projects/"
+      weight: 2
+    - name: "Posts"
+      pre: "pen-tool"
+      url: "/posts/"
+      weight: 3
+    - name: "Resume"
+      pre: "file"
+      url: "/files/resume.pdf"
+      weight: 4
+    - name: "Thesis"
+      pre: "file-text"
+      url: "/files/thesis.pdf"
+      weight: 5

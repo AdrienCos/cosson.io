@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+<h1>{{ .Title }}</h1>
+{{ partial "metadata.html" . }}
+<br><br>
+{{ .Content }}
+
+<div class="row">
+    {{ with .Page.Resources.Match "projects/*.md" }}
+    {{ range . }}
+
+    <div class="col-lg-4 hover-zoom">
+
+        {{ partial "project" . }}
+
+    </div>
+
+    {{ end }}
+    {{ end }}
+</div>
+
+{{ end }}

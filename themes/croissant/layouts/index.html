@@ -1,15 +1,16 @@
 {{ define "main" }}
-<h1 class="my-4 mx-3 d-none d-md-block"> {{ .Title }} </h1>
 
-<div class="row justify-content-center">
 
-    <div class="col-12">
-        <img src="images/headshot.jpg" class="w-25 img-fluid float-start mx-3 rounded d-none d-md-block" alt="">
-        <p class="float-start">
+<div class="container">
+    <h1> {{ .Title }} </h1>
+    <div class="grid" id="index-grid">
+        <div class="container-fluid">
+            <img src="images/headshot.jpg" alt="" id="headshot">
+        </div>
+        <div>
             {{ .Content }}
-        </p>
+        </div>
 
     </div>
-
 </div>
 {{ end }}

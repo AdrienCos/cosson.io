@@ -5,11 +5,11 @@
 <br><br>
 {{ .Content }}
 
-<div class="row">
+<div>
     {{ with .Page.Resources.Match "projects/*.md" }}
     {{ range . }}
 
-    <div class="col-lg-4 hover-zoom">
+    <div>
 
         {{ partial "project" . }}
 

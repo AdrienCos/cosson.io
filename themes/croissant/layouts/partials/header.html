@@ -1,32 +1,24 @@
-<nav class="navbar navbar-expand-md navbar-light">
-    <div class="container-md">
-        <!-- Website name/logo -->
-        <a class="navbar-brand" href="/">{{ .Site.Title }}</a>
-
-        <!-- Navbar collapse button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navbar icons -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
-                {{ range .Site.Menus.main }}
-                <li class="nav-item">
-                    <a class="nav-link active" href="{{ .URL }}">
-                        {{ if .Pre }}
-                        {{ $icon := printf "<i data-feather=\"%s\"></i> " .Pre | safeHTML }}
-                        {{ $icon }}
-                        {{ end }}
-                        {{ $text := print .Name | safeHTML }}
-                        {{ $text }}
-                    </a>
-                </li>
+<nav class="container">
+    <ul>
+        <li><strong>{{ .Site.Title }}</strong></li>
+    </ul>
+    <ul>
+        {{ range .Site.Menus.main }}
+        <li>
+            <a href="{{ .URL }}" {{ if .Post }} target="{{.Post}}" {{ end }}>
+                {{ if .Pre }}
+                {{ $icon := printf "<i data-feather=\"%s\"></i> " .Pre | safeHTML }}
+                {{ $icon }}
                 {{ end }}
-            </ul>
-        </div>
-    </div>
+                {{ $text := print .Name | safeHTML }}
+                {{ $text }}
+            </a>
+        </li>
+        {{ end }}
+        <li>
+            <a href="#" role="button" class="contrast data-theme-switcher"><i data-feather="moon"></i></a>
+        </li>
+    </ul>
 </nav>
 
 <hr>

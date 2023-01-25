@@ -1,6 +1,0 @@
-/* Add padding on the side of the page on displays above medium displays */
-@media (min-width: 768px) {
-    .container-md {
-        max-width: 70%;
-    }
-}

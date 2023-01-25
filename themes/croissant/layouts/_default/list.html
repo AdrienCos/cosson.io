@@ -7,9 +7,9 @@
 {{ end }}
 
 {{ range .Pages.ByPublishDate.Reverse }}
-<div class="m-2 p-2 bg-light border border-secondary border-1 rounded-3">
+<div>
     <h3>
-        <a class="title" href="{{ .RelPermalink }}">
+        <a href="{{ .RelPermalink }}">
             {{ .Title }}
         </a>
     </h3>

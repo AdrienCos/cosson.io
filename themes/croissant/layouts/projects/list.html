@@ -1,22 +1,26 @@
 {{ define "main" }}
+<div class="container">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
 
-<h1>{{ .Title }}</h1>
-{{ partial "metadata.html" . }}
-<br><br>
-{{ .Content }}
-
-<div>
     {{ with .Page.Resources.Match "projects/*.md" }}
     {{ range . }}
 
-    <div>
-
-        {{ partial "project" . }}
-
-    </div>
+    <article>
+        <h4>
+            {{ with .Params.project_url }}
+            <a href="{{ . }}">
+                {{ end }}
+                {{ .Title }}
+                {{ if .Params.project_url }}
+            </a>
+            {{ end }}
+        </h4>
+        {{ .Content }}
+    </article>
 
     {{ end }}
     {{ end }}
+
 </div>
-
 {{ end }}

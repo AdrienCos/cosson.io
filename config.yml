@@ -26,7 +26,9 @@ menu:
       pre: "file"
       url: "/files/resume.pdf"
       weight: 4
+      post: "_blank"
     - name: "Thesis"
       pre: "file-text"
       url: "/files/thesis.pdf"
       weight: 5
+      post: "_blank"

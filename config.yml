@@ -1,7 +1,7 @@
 baseURL: "https://cosson.io"
 languageCode: "en-us"
 title: "Adrien Cosson"
-theme: "Croissant"
+theme: "croissant"
 enableEmoji: true
 
 # General config

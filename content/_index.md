@@ -1,20 +1,25 @@
 ---
 title: "Home"
-tags: ["foo", "bar", "tool"]
+tags: []
 ---
 
 # Hello there :wave:
 
 I am Adrien, a software engineer passionate about embedded systems, home
-automation, and cybersecurity.
+automation, clean code, and cybersecurity.
 
 I am currently employed at [Rtone][rtone], as an Embedded Software Engineer for
 Linux devices. My daily activities there led me work closely with tools such as
 the [Yocto Project][yocto], [Docker][docker], [U-Boot][uboot], [QEMU][qemu], and
-[Azure IoT][azure-iot]. I have also had the opportunity to improve my DevOps
-skills, by using [Ansible][ansible] to help improve the internal infrastructure,
-and [Azure Devops][azure-devops] to create CI/CD pipelines used to test, build,
-and deploy the code we write.
+[Azure IoT][azure-iot]. I have also had
+the opportunity to improve my DevOps skills, by using [Ansible][ansible] to help
+improve the internal infrastructure, and [Azure Devops][azure-devops] to create
+CI/CD pipelines used to test, build, and deploy the code we write.
+
+My main programming language is by far [Python][python], always accompanied by a
+fleet of tools to help navigate my code, and keep it clean, typed, and tested. I
+have some familiarity with C/C++, Rust, and Go, which I would like to develop
+further in the future!
 
 In 2020, I obtained a Master's Degree in Computer Science and Engineering from
 the [Pennsylvania State University][psu]. During this degree, I was a member of
@@ -43,3 +48,4 @@ préparatoire at the Lycée Saint-Louis.
 [thesis]: /files/thesis.pdf
 [uboot]: https://github.com/u-boot/u-boot
 [yocto]: https://www.yoctoproject.org/
+[python]: ./images/snek.jpg

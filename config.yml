@@ -14,14 +14,15 @@ menu:
       pre: "home"
       url: "/"
       weight: 1
-    - name: "Projects"
-      pre: "tool"
-      url: "/projects"
-      weight: 2
-    - name: "Posts"
-      pre: "pen-tool"
-      url: "/posts/"
-      weight: 3
+      # Someday I will have some interesting things to show and write about
+    # - name: "Projects"
+    #   pre: "tool"
+    #   url: "/projects"
+    #   weight: 2
+    # - name: "Posts"
+    #   pre: "pen-tool"
+    #   url: "/posts/"
+    #   weight: 3
     - name: "Resume"
       pre: "file"
       url: "/files/resume.pdf"
